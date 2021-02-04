@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #2a80b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  padding: 40px;
+  background: #fff;
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  min-width: 885px;
+}
+
+.input-row {
+  display: flex;
+  margin-bottom: 40px;
+
+  input {
+    border: none;
+    border-bottom: 4px solid #dedede;
+    margin-right: 20px;
+    width: 100%;
+    outline: none;
+    font-size: 1.3rem;
+
+    &::placeholder {
+      font-size: 1.3rem;
+      color: #757575;
+    }
+  }
+
+  button {
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    background: #f1f1f1;
+    padding: 25px;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    outline: none;
+  }
+}
+
+.tab-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 40px;
+
+  .tab-item {
+    margin-right: 30px;
+
+    .tab-link {
+      color: #cccccc;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 700;
+
+      &.active {
+        color: #333333;
+      }
+    }
+  }
+}
+
+.tab-info {
+  display: none;
+
+  &.active.show {
+    display: block;
+  }
+}
